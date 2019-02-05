@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const cfg require('./index.json'); // a garder en version desktop
+//const cfg require('./index.json'); // a garder en version desktop
 const token = process.env.token // a garder en version heroku
 const prefix = ("?");
 
@@ -36,5 +36,5 @@ bot.on('message', msg => {
 
 });
 
-bot.login(cfg.token); //a garder en version desktop
+//bot.login(cfg.token); //a garder en version desktop
 bot.login(token); //a garder en version heroku
