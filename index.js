@@ -4,14 +4,14 @@ const prefix = ("?");
 
 bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
-    bot.user.setActivity('rien').catch(console.error)
+    bot.user.setActivity('rien')
 });
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
         return channel.send('Bienvenue sur le serveur de Alexpgm' + member.displayName)
         console.log(`${member.displayName} à rejoind le serveur.`)
-    }).catch(console.error)
+    })
 });
 
 const ban = require('./kick et ban/ban');
